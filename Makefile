@@ -1,5 +1,5 @@
 # Programs name
-PROG = turbot
+PROG = turbolink
 
 # Define the target file
 TARGET = main
