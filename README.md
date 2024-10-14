@@ -67,7 +67,7 @@ Dial some server
 + Zimodem esp32 https://github.com/bozimmerman/Zimodem
 + espressiff AT es8266 & esp32 https://www.espressif.com/en/support/download/at
 + PicoWifiModem Easpberry Pi Pico W https://github.com/mecparts/PicoWiFiModem/
-+ tcpser PC + rs232 ttl adptor https://github.com/FozzTexx/tcpser
++ tcpser PC + rs232 ttl adapter https://github.com/FozzTexx/tcpser
 
 
 This may depend on your modem but should be similar to this
