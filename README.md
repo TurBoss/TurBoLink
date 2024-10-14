@@ -32,7 +32,8 @@ Get z88dk development kit
 
 
 Obtain the source code using git.
-Build run make in the root directory of the project
+
+Run make in the root directory of the project
 
 
 ```
@@ -55,12 +56,14 @@ Running on the agon
 ===================
 
 
-Copy the bin file to any place on the SD card,  placing it on /MOS has issues don't place the bin there
+Copy the bin file to any place on the SD card,
+
+placing it on /MOS has issues don't place the bin there
 
 
 ```
 / *load turbolink.bin
-/ * run
+/ *run
 ```
 
 
