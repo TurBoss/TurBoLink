@@ -1,10 +1,12 @@
-Agon Terminal Client TurboLink
+Agon Terminal Client TurBoLink
 ==============================
 
 
 https://github.com/TurBoss/TurBoLink
 
-TurboLink Opens Port UART1 from the UEXT and GPIO pin headers and allows you to send data
+TurboLink Opens Port UART1 from the UEXT and GPIO pin headers and allows you to send and receive data
+
+https://agonconsole8.github.io/agon-docs/GPIO/
 
 
 
