@@ -26,7 +26,7 @@ Building from sources
 
 Get z88dk development kit
 
-
++ https://z88dk.org
 + https://github.com/z88dk/z88dk
 + https://github.com/z88dk/z88dk/wiki/installation
 
@@ -37,7 +37,7 @@ Build run make in the root directory of the project
 
 ```
 git cloen https://github.com/TurBoss/TurBoLink.git
-cd turbolink
+cd TurBoLink
 make
 ```
 should output this 
