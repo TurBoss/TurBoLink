@@ -1,5 +1,26 @@
+Agon Terminal Client TurboLink
+==============================
+
+
+https://github.com/TurBoss/TurBoLink
+
+TurboLink Opens Port UART1 from the UEXT and GPIO pin headers and allows you to send data
+
+
+
+Binaries distribution
+=====================
+
+
+Check the releases page for binaries
+
+https://github.com/TurBoss/TurBoLink/releases
+
+
+
 Building from sources
 =====================
+
 
 Get z88dk development kit
 
@@ -8,20 +29,25 @@ Get z88dk development kit
 + https://github.com/z88dk/z88dk/wiki/installation
 
 
+Obtain the source code using git.
+Build run make in the root directory of the project
 
-to build run make in the root directory of the project
 
 ```
+git cloen https://github.com/TurBoss/TurBoLink.git
+cd turbolink
 make
 ```
 should output this 
 
 `z88dk-z80asm -mez80 -b -Iinclude -oturbolink.bin  main.asm`
-and `turbolink.bin` should have been created
+`turbolink.bin` should have been created
+
 
 
 Running on the agon
 ===================
+
 
 copy the bin file to any place on the SD card,  placing it on /MOS has issues don't place the bin there
 
@@ -30,6 +56,8 @@ copy the bin file to any place on the SD card,  placing it on /MOS has issues do
 / *load turbolink.bin
 / * run
 ```
+
+
 
 Dial some server
 ================
@@ -50,4 +78,6 @@ This may depend on your modem but should be similar to this
 ATDTserver.address:port
 ```
 
-refer to each modem At commands doc
+please refer to each modem At commands reference docs
+
+
