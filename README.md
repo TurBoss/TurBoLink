@@ -40,9 +40,13 @@ git cloen https://github.com/TurBoss/TurBoLink.git
 cd TurBoLink
 make
 ```
-should output this 
+
+
+Should output this 
+
 
 `z88dk-z80asm -mez80 -b -Iinclude -oturbolink.bin  main.asm`
+
 `turbolink.bin` should have been created
 
 
@@ -51,7 +55,7 @@ Running on the agon
 ===================
 
 
-copy the bin file to any place on the SD card,  placing it on /MOS has issues don't place the bin there
+Copy the bin file to any place on the SD card,  placing it on /MOS has issues don't place the bin there
 
 
 ```
@@ -80,6 +84,6 @@ This may depend on your modem but should be similar to this
 ATDTserver.address:port
 ```
 
-please refer to each modem At commands reference docs
+Please refer to each modem At commands reference docs
 
 
