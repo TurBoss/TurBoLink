@@ -15,12 +15,10 @@
 
 _INIT:
 
-    STMIX				; Set mixed mode
-
+	
 	DI					; disable interrupts
 
     LD		SP,	0BFFFFh
-
 	CALL	_MAIN
 
 	RET
@@ -28,18 +26,25 @@ _INIT:
 
 _MAIN:
 
+    STMIX				; Set mixed mode
 
-	CALL	EZ80_INIT
-
+	;CALL	EZ80_INIT
+	
 	CALL	UART0_INIT		; init UART 0
+	
 	CALL	UART1_INIT		; init UART 1
 
 	CALL	_SETMODE		; change VDP to terminal mode
 
 	LD		HL, s_HELLORD
     CALL	VDP_PRINT
+    
+    
+	LD		HL, s_AT
+    CALL	SER_PRINT
 
     JP		_LOOP
+
 
 
 _LOOP:
@@ -52,8 +57,8 @@ _SEND:
 	BIT 0, B
 	JR Z, _RECV
 
-    LD (s_RESULT), A
-    LD	HL, s_RESULT
+    LD (s_TX_BUFF), A
+    LD	HL, s_TX_BUFF
 
     CALL SER_PRINT
 
@@ -64,8 +69,8 @@ _RECV:
     BIT 0, B
 	JR Z, _DONE
 
-    LD (s_RESULT), A
-    LD	HL, s_RESULT
+    LD (s_RX_BUFF), A
+    LD	HL, s_RX_BUFF
 
     CALL VDP_PRINT
 
@@ -98,8 +103,10 @@ _SETMODE:
 #include	"print.inc"
 
 
+s_AT:	DB 	"ATI\r\n",	0
 s_HELLORD:	DB 	"\r\nTurBo Link - Terminal client v1.0.1\r\n",	0
-s_RESULT:	DB	0,												0
+s_TX_BUFF:	DB	0,												0
+s_RX_BUFF:	DB	0,												0
 
 
 _END:	JP	_END
