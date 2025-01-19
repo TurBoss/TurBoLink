@@ -30,7 +30,8 @@ _MAIN:
 
 	;CALL	EZ80_INIT
 	
-	CALL	UART0_INIT		; init UART 0
+	; Disabled, handled by MOS v3 in FULL DUPLEX
+	;CALL	UART0_INIT		; init UART 0 
 	
 	CALL	UART1_INIT		; init UART 1
 
