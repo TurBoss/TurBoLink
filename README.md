@@ -37,7 +37,7 @@ Run make in the root directory of the project
 
 
 ```
-git cloen https://github.com/TurBoss/TurBoLink.git
+git clone https://github.com/TurBoss/TurBoLink.git
 cd TurBoLink
 make
 ```
